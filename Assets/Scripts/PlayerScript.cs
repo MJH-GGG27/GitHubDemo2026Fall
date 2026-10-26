@@ -25,7 +25,7 @@ public class PlayerScript : MonoBehaviour
     //This is how many points we currently have
     public int Score = 0;
 
-    public ScoreScript
+    public ScoreScript scoreScript;
 
     // This is the player's health
     public int Health = 3;
@@ -127,4 +127,3 @@ public class PlayerScript : MonoBehaviour
         SceneManager.LoadScene("Game Over");
     }
 }
-
