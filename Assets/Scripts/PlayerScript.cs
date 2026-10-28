@@ -106,6 +106,11 @@ public class PlayerScript : MonoBehaviour
             Score++;
             //And then update the game's score text
             UpdateScore();
+
+            if (Score >= 5)
+            {
+                Win();
+            }
         }
     }
 
@@ -125,5 +130,10 @@ public class PlayerScript : MonoBehaviour
     public void Die()
     {
         SceneManager.LoadScene("Game Over");
+    }
+
+    public void Win()
+    {
+        SceneManager.LoadScene("You Win");
     }
 }
